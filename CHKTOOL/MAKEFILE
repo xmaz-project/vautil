@@ -1,0 +1,26 @@
+INCDIR=c:\include
+LIB=c:\lib\s88va250.lib
+DIST=..\dist
+
+.asm.obj:
+	optasm $<; /MX
+
+.c.obj:
+	tcc -c -1 -G -I$(INCDIR) $<
+
+all: kbdchk.exe
+
+kbdchk.exe: kbdchk.obj fastknj.obj fastank.obj
+	tcc -M kbdchk.obj fastknj.obj fastank.obj $(LIB)
+
+clean:
+	del *.obj
+	del *.map
+	del kbdchk.exe
+
+pack: $(DIST)\kbdchk.lzh
+
+$(DIST)\kbdchk.lzh: kbdchk.exe kbdchk.txt
+	lha a $(DIST)\kbdchk.lzh kbdchk.exe kbdchk.txt
+
+
