@@ -16,7 +16,7 @@
 
 void	_Cdecl	fast_ank (int x, int y, char *str);
 
-#define VERSION "v0.1"
+#define VERSION "v0.2"
 
 #define KEY_COUNT_TO_EXIT 5     /* 2Ç¬ÇÃÉLÅ[Çåå›Ç…5âÒì¸óÕÇ∑ÇÈÇ∆èIóπ */
 
@@ -65,7 +65,7 @@ static char *sc_symbols[SCANCODES] = {
 /* 20*/ "F    ", "G    ", "H    ", "J    ", "K    ", "L    ", ";+   ", ":*   ",
 /* 28*/ "]}   ", "Z    ", "X    ", "C    ", "V    ", "B    ", "N    ", "M    ",
 /* 30*/ ",<   ", ".>   ", "/?   ", "_    ", "SPACE", "ïœä∑ ", "ROLUP", "ROLDN",
-/* 38*/ "INS  ", "DEL  ", "Å™   ", "Å©   ", "Å®   ", "Å©   ", "CLR  ", "HELP ",
+/* 38*/ "INS  ", "DEL  ", "Å™   ", "Å©   ", "Å®   ", "Å´   ", "CLR  ", "HELP ",
 /* 40*/ "TK - ", "TK / ", "TK 7 ", "TK 8 ", "TK 9 ", "TK * ", "TK 4 ", "TK 5 ",
 /* 48*/ "TK 6 ", "TK + ", "TK 1 ", "TK 2 ", "TK 3 ", "TK = ", "TK 0 ", "TK , ",
 /* 50*/ "TK . ", "åàíË ", "     ", "     ", "     ", "     ", "     ", "     ",
