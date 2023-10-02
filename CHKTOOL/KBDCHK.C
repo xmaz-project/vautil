@@ -226,7 +226,7 @@ static void draw()
 	wstr("%d回入力で終了",KEY_COUNT_TO_EXIT);
 
 	fast_kanji(NOTE_X, NOTE_Y,  
-	  "備考: リピートしないキー: SFT, CTRL, GRPH, 全角, PC, CAPS, かな");
+	  "備考: リピートしないキー: SFT, CTRL, GRPH, 全角, PC, COPY, INS, f.*, CAPS, かな");
 	fast_kanji(NOTE_X, NOTE_Y+1, 
 	  "      トグルキー:         CAPS, かな");
 
